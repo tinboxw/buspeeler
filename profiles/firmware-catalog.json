@@ -1,0 +1,1241 @@
+{
+  "schema": 1,
+  "source": "docs/EST580/固件版本",
+  "warning": "字符串、向量与文件名仅用于筛选，不证明完整恢复或车型适用性。",
+  "files": [
+    {
+      "name": "EST558S_STM32_BAIC_D50_AT_2015_V2.0.1.230501.bin",
+      "bytes": 47380,
+      "sha256": "7759a091c6d48f09afe6ba9d1bfadd47c5f247475fbe9a25e00a8ac236183aba",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006629",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_BAIC_D50_AT_2019_V2.0.1.230501.bin",
+      "bytes": 47348,
+      "sha256": "da9bdbdb663c167b4a3226033d8d9779802ec117196cbc3ee1ee4f1406691a0e",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006609",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_BAIC_D50_MT_2015_V2.0.1.230501.bin",
+      "bytes": 47348,
+      "sha256": "b185b6968a9fe2b5656af4bf25d67329bd97ab68735e2d4a91017ad5dcd7c9db",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006609",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_BAIC_EU260_AT_2021_V2.0.1.230501.bin",
+      "bytes": 47380,
+      "sha256": "f696bb0e48047f2e6772c5cc003089853a765a2c1c8192d28911b0f975e3eb2c",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006629",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_BAIC_EU300_AT_2020_V2.0.1.230501.bin",
+      "bytes": 47920,
+      "sha256": "10f2d9ef76f4a0abf0f4ead796ab9f0891d538dc05d907278cb5ff5b2d10b9ae",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006845",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_BAIC_EU300_MT_2021_V2.0.1.230501.bin",
+      "bytes": 47616,
+      "sha256": "78e198777a768f0bbe3db4078982bc5827a9354f211c15abbb56e594961da4c5",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006715",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_BAIC_EU300_MT_2022_V2.0.1.230501.bin",
+      "bytes": 47736,
+      "sha256": "c5421c0bff1e746cccee3be2330836da09741aa385d17f184dd794bf5747a08f",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x0800678D",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_BYD_E2_EV_2022_V2.0.1.230501.bin",
+      "bytes": 47316,
+      "sha256": "f0001f143f76c2637444d638f833050960980b43ed4761945d79912667af5031",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080065E9",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_BYD_E3_EV_2024_V2.0.2.241220.bin",
+      "bytes": 50036,
+      "sha256": "d0231311d13ffd05709708e4a47b1e3969f7e09b22251915e6246f5276e51c75",
+      "initial_sp": "0x20005898",
+      "reset_vector": "0x08006FFD",
+      "rt_formats": [
+        39,
+        40
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_BYD_E3_EV_AT_2024_V2.0.2.250510.bin",
+      "bytes": 50404,
+      "sha256": "b381e39073583d0b93179060ffd4a5c0a59329398ef37680fee408f74b22fd6a",
+      "initial_sp": "0x20005898",
+      "reset_vector": "0x0800716D",
+      "rt_formats": [
+        39,
+        40
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_BYD_E3_EV_MT_2024_V2.0.2.250510.bin",
+      "bytes": 50424,
+      "sha256": "8307979d634ba43e8195f0700bf348cd8684c2fd1d4b06a680229510931c5c5f",
+      "initial_sp": "0x20005898",
+      "reset_vector": "0x08007181",
+      "rt_formats": [
+        39,
+        40
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_BYD_E3_EV_MT_2024_V2.0.2.260402.bin",
+      "bytes": 50596,
+      "sha256": "de14ffe741d6676a551a9d76d2a6bdf31ad5b164f0cb68f45572690e0c92c995",
+      "initial_sp": "0x20005898",
+      "reset_vector": "0x0800722D",
+      "rt_formats": [
+        39,
+        40
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_BYD_SURUI_MT_2015_V2.0.1.230501.bin",
+      "bytes": 47368,
+      "sha256": "2790cc50d9b669ea174c24c34dbcf65f57c288d6b69e8c7e86fda0d3b4d399b1",
+      "initial_sp": "0x20005690",
+      "reset_vector": "0x08006621",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CA_EADO_AT_2016_V2.0.1.230501.bin",
+      "bytes": 47440,
+      "sha256": "38107f786f5f35110dfffc0810e638a5d11006eaedd297518ad44cfdb6e42603",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006665",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CA_EADO_EV200_2017_V2.0.1.230501.bin",
+      "bytes": 47404,
+      "sha256": "01af8f831650523254dc07b1c1dfc053d40f8d4793b4e81249e51b6182d34e3a",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006641",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CA_EADO_EV460_2020_V2.0.1.230501.bin",
+      "bytes": 47424,
+      "sha256": "f9dad3e0d0c53bc4d6bebc5204367964abfc59bbd8e09e2b6ee1c957b8bab753",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006655",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CA_EADO_MT_2016_V2.0.1.230501.bin",
+      "bytes": 47440,
+      "sha256": "f97733877f276ac5504a1b9010dce7317648c61ed1f77d4e8c16538903ea6562",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006665",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CC_FENGJUN5_MT_2017_V2.0.1.230501.bin",
+      "bytes": 47040,
+      "sha256": "73294a3bce3ced109f0663cc265334208039ff3d4cc8df8fa3bc2b5bf81f0b6f",
+      "initial_sp": "0x20005690",
+      "reset_vector": "0x080064D9",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CC_HARVARD_H6_AT_2021_V2.0.1.230501.bin",
+      "bytes": 47600,
+      "sha256": "145c1c0f3c60ae7e4bfe5096d93b360804175ff0cf51c5e2e3094ff14249b784",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006705",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CHERY_ARRIZO5_AT_2016_V2.0.1.230501.bin",
+      "bytes": 47284,
+      "sha256": "de8940b2dee06291266d099c45c6132cb0c1f308fba89f9295a0fb0a0f4dc58d",
+      "initial_sp": "0x20005690",
+      "reset_vector": "0x080065CD",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CHERY_ARRIZO5_AT_2019_V2.0.1.230501.bin",
+      "bytes": 47600,
+      "sha256": "9d97d287f50621dc617842c8b16e31f1e5c236f0c8eab392d12b97286cc0de93",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006705",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CHERY_ARRIZO_E3_MT_2018_V2.0.1.230501.bin",
+      "bytes": 47380,
+      "sha256": "c5daa047f7acb2aa7694685779364ae807097614f1ecd56fe0fa584e8b62cc93",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006629",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CTR_ELYSEE_AT_2017_V2.0.1.230501.bin",
+      "bytes": 48156,
+      "sha256": "198e95a0176db38f0c5febb7d0bdee484b7886e63e6b464447662f1f2b17c4ab",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080068ED",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CTR_ELYSEE_AT_2019_V2.0.1.230501.bin",
+      "bytes": 48368,
+      "sha256": "a9eba268978f1fbb97d67c911f802d2e15ed02f984e62e914534adecca791469",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080068FD",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CTR_ELYSEE_EV_2019_V2.0.1.230501.bin",
+      "bytes": 47320,
+      "sha256": "877a05a23f3a5f6f4d554923e59a90d143c8ffe67660c5efebcbca691a14d757",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080065ED",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CTR_ELYSEE_EV_2020_V2.0.1.230501.bin",
+      "bytes": 47460,
+      "sha256": "d646b1a22bb9c2c133fedb537943382d197673f6c154b4716c68fe5b68620f91",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006679",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CTR_ELYSEE_EV_2021_V2.0.1.230501.bin",
+      "bytes": 47280,
+      "sha256": "fbe6107c08e743d56088f770a73c5c5cc1c320e287cb7de7d7d977db6d52b544",
+      "initial_sp": "0x20005690",
+      "reset_vector": "0x080065C9",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CTR_ELYSEE_EV_AT_2023_V2.0.2.260101.bin",
+      "bytes": 50652,
+      "sha256": "b79f0738747b73ed1346eef7381ae8c27a68dd9f623e8dd75d95ce1cec48c431",
+      "initial_sp": "0x20005898",
+      "reset_vector": "0x08007269",
+      "rt_formats": [
+        39,
+        40
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CTR_ELYSEE_EV_AT_2023_V2.0.2.260301.bin",
+      "bytes": 50664,
+      "sha256": "48660c606505ae0c005181cfd01c105c1bde8d944b9b07aa2bf3d07793e6f8ca",
+      "initial_sp": "0x20005898",
+      "reset_vector": "0x08007275",
+      "rt_formats": [
+        39,
+        40
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CTR_ELYSEE_EV_MT_2024_V2.0.2.260301.bin",
+      "bytes": 50688,
+      "sha256": "43fc3c85ab6691536f464b7fbccdca8738b1c2802065b65bfed3a7ef9be3fb55",
+      "initial_sp": "0x20005898",
+      "reset_vector": "0x0800728D",
+      "rt_formats": [
+        39,
+        40
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CTR_ELYSEE_MT_2014_V2.0.1.230501.bin",
+      "bytes": 48252,
+      "sha256": "02a032e947435284a8a372d193454f343320a2bd6fe25fa4fd2506c538500161",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006889",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CTR_ELYSEE_MT_2017_V2.0.1.230501.bin",
+      "bytes": 47840,
+      "sha256": "8b489710e663f5fe12e52cceb7b6e73e4f93dca4ce92cd25c63890503463f505",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080067B1",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_CTR_ELYSEE_MT_2019_V2.0.1.230501.bin",
+      "bytes": 47864,
+      "sha256": "61d6c8ad66a870ed2050a24dfb6dd15ff025b3a5ca23d15550f4e9b2ed489a1b",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006809",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_DF_E60_MT_2022_V2.0.1.230501.bin",
+      "bytes": 47540,
+      "sha256": "32a0b61208c568856d9ca6624705369cf5cc35d1c84db1a6c498ac41c8bd53c5",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080066C9",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_DF_E70_AT_2022_V2.0.1.230501.bin",
+      "bytes": 47432,
+      "sha256": "0e53a3f29803ed185acae7f3097340152a37d1ae8cc5aab386897e01176c555a",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x0800665D",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_DF_E70_MT_2022_V2.0.1.230501.bin",
+      "bytes": 47468,
+      "sha256": "ac4bdc398e58446080f85c6cf97347df0160cc84c8b4fc151e0ff7a69ef818b0",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006681",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_DF_E70_MT_2023_V2.0.1.230501.bin",
+      "bytes": 47544,
+      "sha256": "f4cbec7c07aea9ddd7bf138961dfd6ecb28ad110fcad12c2a59d3e2b4a47ff38",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080066CD",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_GAC_GA5_MT_2015_V2.0.1.230501.bin",
+      "bytes": 47436,
+      "sha256": "faf7831c4c9c3bfc0817ab92aab34a7aafcea93bd6bc27cd96a43437630d2b31",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006621",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_HM_M3_AT_2016_V2.0.1.230501.bin",
+      "bytes": 47296,
+      "sha256": "f3746b3594d50caca9ed4aac722716b4a9ec7f8f82bd6060a527e7aae0a13100",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080065D5",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_HYUNDAI_VERNA_2021_V2.0.2.250525.bin",
+      "bytes": 50472,
+      "sha256": "7898768c2b2266a7b455cad3b36da60608a5656c85533b301ccef49a30b0a215",
+      "initial_sp": "0x20005898",
+      "reset_vector": "0x080071B1",
+      "rt_formats": [
+        39,
+        40
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_HYUNDAI_VERNA_AT_2021_V2.0.2.250525.bin",
+      "bytes": 50516,
+      "sha256": "587cd7535ac6e4b62960b4ec57cd6489173877173a167a3175ca88c7f1297a83",
+      "initial_sp": "0x20005898",
+      "reset_vector": "0x080071DD",
+      "rt_formats": [
+        39,
+        40
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_JAC_IEV7_AT_2022_V2.0.1.230501.bin",
+      "bytes": 47352,
+      "sha256": "a45671806c3213f770427b18122975ec5056c637222f8469fb9aa64c571743e2",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x0800660D",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_JAC_IEV7_AT_2022_V2.0.2.250220.bin",
+      "bytes": 50096,
+      "sha256": "a1941232ba1c745395b0a2d1b1b544a4be0dee7575771405e1e369a1ccfb3715",
+      "initial_sp": "0x20005898",
+      "reset_vector": "0x08007039",
+      "rt_formats": [
+        39,
+        40
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_JAC_IEV7_AT_2022_V2.0.2.250410.bin",
+      "bytes": 50332,
+      "sha256": "1190f590cd910dc1efa120e851d8c4c5cdb6be335fc4219968cd45fe6810feb4",
+      "initial_sp": "0x20005898",
+      "reset_vector": "0x08007125",
+      "rt_formats": [
+        39,
+        40
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_JL_DIHAO_AT_2021_V2.0.1.230501.bin",
+      "bytes": 47432,
+      "sha256": "ac812fabc965a287386d3a69e63bd0f5120b994c51c1c51db639513331a4c9b6",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x0800665D",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_JL_DIHAO_AT_2022_V2.0.1.230501.bin",
+      "bytes": 47608,
+      "sha256": "5dee185120bec4bda026a6e5d4583fba2bb5a24cdbb2a2c2d0c35bea5faed48a",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x0800670D",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_KIA_FORTE_AT_2021_V2.0.1.230501.bin",
+      "bytes": 47532,
+      "sha256": "f0bfd4ea8321491399cf965d0c53709a73a2752d47b8d68392532f899d1ce4ea",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080066C1",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_KIA_K2_AT_2014_V2.0.1.230501.bin",
+      "bytes": 46876,
+      "sha256": "6c8d45a559137d261e5ee692657ec74dfb0a7c71a336c991eed7e2c73bcb2b58",
+      "initial_sp": "0x20005690",
+      "reset_vector": "0x08006435",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_KIA_K2_AT_2019_V2.0.1.230501.bin",
+      "bytes": 47096,
+      "sha256": "ecc37039cdc47e79123f1fe7cd5dacc3a91202e67cfbc83b9ed323cd9a886ed3",
+      "initial_sp": "0x20005690",
+      "reset_vector": "0x08006511",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_KIA_PEGAS_MT_2018_V2.0.1.230501.bin",
+      "bytes": 47040,
+      "sha256": "cd1faec29b77503f17f67c06ddb75497ac3d1646590b3fcc36500ad831a7daa5",
+      "initial_sp": "0x20005690",
+      "reset_vector": "0x080064C1",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_MAXUS_T70_AT_2022_V2.0.1.230501.bin",
+      "bytes": 47380,
+      "sha256": "0c02554b8c574cf5e850ea93e2188b06f6d481bd1a855c43b526090e92dab7ab",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006629",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_RW_350S_AT_2017_V2.0.1.230501.bin",
+      "bytes": 47032,
+      "sha256": "6b9d0fabd1b18ee474b37530ebc1a27eaa6080a06661a3aac7bda6fd307a9ad3",
+      "initial_sp": "0x20005690",
+      "reset_vector": "0x080064D1",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_RW_EI5_AT_2019_V2.0.1.230501.bin",
+      "bytes": 47132,
+      "sha256": "d072c136f0f84de2510fb3182538027106c02f854ed1ca45040f44991023616f",
+      "initial_sp": "0x20005690",
+      "reset_vector": "0x08006535",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_RW_EI5_MT_2021_V2.0.1.230501.bin",
+      "bytes": 47412,
+      "sha256": "96e0da0b89cb658a9cac61117caa5fd9fae37065307aed41d42c33b2ae9ccd3c",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006649",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_RW_MG_I5_MT_2020_V2.0.1.230501.bin",
+      "bytes": 47356,
+      "sha256": "11e8b8ce19f25e8901507ec98d0e902d687200feb86eb161baddba1afece9526",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006611",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_SE_A5_AT_2019_V2.0.1.230501.bin",
+      "bytes": 47608,
+      "sha256": "b9cf969866e02eb8734622c8cb2f5f6c7d65e8e0c9418d0cc972febcade86384",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x0800670D",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_SE_A5_MT_2019_V2.0.1.230501.bin",
+      "bytes": 47524,
+      "sha256": "2d16b4393fe3f658941a19f5d97605f8534b27e27789c481975699b241490343",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080066B9",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_SE_V5_MT_2015_V2.0.1.230501.bin",
+      "bytes": 47196,
+      "sha256": "a6d2bf721f08e247cf196eb6aa39e70c5f139f31fcef1d06d004368045def61b",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006571",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_TOYOTA_VOIS_MT_2021_V2.0.1.230501.bin",
+      "bytes": 47584,
+      "sha256": "c0719d69d3684ec6ae9c20444809aa763fbbce563c260ff4d4c959d32690dfb6",
+      "initial_sp": "0x200056C0",
+      "reset_vector": "0x080066C1",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_BORA_AT_2019_V2.0.1.230501.bin",
+      "bytes": 48136,
+      "sha256": "117f7b7a757b0f3f4834299590c86de02e03e826a7a3d18d505227628445c5f6",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080068DD",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_BORA_AT_2022_V2.0.1.230501.bin",
+      "bytes": 48400,
+      "sha256": "cbddcd5a072373c56fe82a66da42452e85b506fffc593aefa6304059451eaedc",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080069E1",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_GOLFJV_AT_2018_V2.0.1.230501.bin",
+      "bytes": 47720,
+      "sha256": "60feccc9a238c4767d346b3385a51dd7043ad79436527f231084e0ed603ecc1e",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006765",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_JETTA_AT_2014_V2.0.1.230501.bin",
+      "bytes": 48116,
+      "sha256": "c2828405fc8d7fbacbafdd1c3d55358cb10b3d472a5ff11322348271d5e35fa6",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080068C9",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_JETTA_AT_2017_V2.0.1.230501.bin",
+      "bytes": 48092,
+      "sha256": "80c6f1b413c37c54ce6faed76a6613a907ec82f4f102e4a30ad7e32078a156de",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080068B1",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_JETTA_AT_2019_V2.0.1.230501.bin",
+      "bytes": 48228,
+      "sha256": "4ca61d81c80e059dc54b0d79524a3544da0719bd5ccafa2c1893e5bc1c4cca3a",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006939",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_JETTA_AT_2021_V2.0.1.240201.bin",
+      "bytes": 48996,
+      "sha256": "9e02e9b092c80150ff8ca18608641cf19e8a6ebf4e7580cf31f766bf7f223913",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006C35",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_JETTA_AT_2023_V2.0.1.231001.bin",
+      "bytes": 48712,
+      "sha256": "62ec8174e54a222bd1402f8485a6ceebffdcb7f3763115412ebe2bcb872ea3c5",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006B19",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_JETTA_MT_2014_V2.0.1.230501.bin",
+      "bytes": 48424,
+      "sha256": "d12fe1576ebfb7c73c5fcfaa8e13d2df2b5723bd81bf34002f776a8d930d51d9",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080069F9",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_JETTA_MT_2014_V2.0.2.240701.bin",
+      "bytes": 50848,
+      "sha256": "21d0f3b8a3332b3022a54c89b78f94520dfbaaa61965aebccd1d1d10518e61ec",
+      "initial_sp": "0x200058A0",
+      "reset_vector": "0x080072E5",
+      "rt_formats": [
+        39,
+        40
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_JETTA_MT_2017_V2.0.1.230501.bin",
+      "bytes": 48412,
+      "sha256": "6df857899dab762dff2ad291514ef6ac1e5680118336736edbfd930e5a609d3d",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080069ED",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_JETTA_MT_2019_V2.0.1.230501.bin",
+      "bytes": 48048,
+      "sha256": "d651db0cd5028881e6d54a67170ecadf4a694abf02b1fecb13d525afcd9dbca6",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080068C5",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_JETTA_MT_2021_V2.0.1.230501.bin",
+      "bytes": 48400,
+      "sha256": "712f0577ecb59e1950625b9915510dfb7fa95fe8a517daad17f6dec6555192b6",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080069E1",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_JETTA_MT_2021_V2.0.1.240201.bin",
+      "bytes": 48996,
+      "sha256": "3e88e4bb12337ba43ad764bd80509f30b05d8e489f4641a5909734bfc657f4b5",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006C35",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_LAVIDA_EV_2022_V2.0.1.230501.bin",
+      "bytes": 47608,
+      "sha256": "de429021222207155571c313036208831f94a084255b0729b2d9d6f0bd962634",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x0800670D",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_LAVIDA_EV_2022_V2.0.1.230801.bin",
+      "bytes": 48008,
+      "sha256": "a37bf6fbd3b7ef94e7262100609d86c4fc7a9e2f8fdb7d1d18cd46e6b4eb1182",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x0800689D",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_SANGTANA_AT_2014_V2.0.1.230501.bin",
+      "bytes": 48116,
+      "sha256": "5214752c5bc6e257f159364533dfee8e97c827d9b3cec6825e29c3b31b9f20ef",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080068C9",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_SANGTANA_AT_2017_V2.0.1.230501.bin",
+      "bytes": 48116,
+      "sha256": "c2e0cf791ffe6630f46e1348bb1c813674151557064b7f188bdb164b93b95bc6",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080068C9",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_SANGTANA_AT_2019_V2.0.1.230501.bin",
+      "bytes": 48152,
+      "sha256": "eb29d38cce01add64706d5de19725cea10e0c154399c0cc43358dcc09c82107f",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080068ED",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_SANGTANA_AT_2024_V2.0.1.240525.bin",
+      "bytes": 49260,
+      "sha256": "53c4506cec158a27f4542d24bcf61da9ca5e168a1c2163017923da06b2955ac6",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006D3D",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_SANGTANA_MT_2014_V2.0.1.230501.bin",
+      "bytes": 48220,
+      "sha256": "e871f44963e254d875a4ac1a45b5889e1b0d564ab43658a73a6d9a2f5c78ad01",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x0800692D",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_SANGTANA_MT_2017_V2.0.1.230501.bin",
+      "bytes": 48220,
+      "sha256": "34ac8a3f6da24f0cc086dcb17dd865405412fc7c5f8ad9aebcea652c355e4cbe",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x0800692D",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_SANGTANA_MT_2019_V2.0.1.230501.bin",
+      "bytes": 48244,
+      "sha256": "28f68bc5a39a697daa9040b927a7f63234834d1c5e4a52f9b5d43fd58fb4d108",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006945",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_SKODA_AT_2014_V2.0.1.230501.bin",
+      "bytes": 48456,
+      "sha256": "2dd24141576ce13ff33279c672d384c40cc0ab25727e6eb074bbfb65dd9dd736",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006A05",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_VA3_AT_2019_V2.0.1.230501.bin",
+      "bytes": 48152,
+      "sha256": "f211d1c187f772a60f82e8e76160fbee30509381d7ab4678a91f3e75e542a471",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080068ED",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_VW_VA3_MT_2019_V2.0.1.230501.bin",
+      "bytes": 48244,
+      "sha256": "97cf73b6db26e9026900aeb91050d99c12952e909fe87a74c0c7f70c5b6af1d8",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006945",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST558S_STM32_ZX_TRUCK_AT_2022_V2.0.1.230501.bin",
+      "bytes": 46832,
+      "sha256": "15ceea903b48df8b3010d5b130d9073d04aa2f86edbcd0b2c83949ce586f3cb8",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006405",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST580_STM32_BYD_E3_EV_2022_V2.0.1.230801.bin",
+      "bytes": 47740,
+      "sha256": "c771c5c09ef0070331c891927c358125d274ea0bc78b97925cee3704df55a8e9",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006791",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST580_STM32_DF_E60_MT_2022_V2.0.1.230501.bin",
+      "bytes": 47544,
+      "sha256": "ef35a6d8ade4cb15d8db739379b4d79aba792fd36e6c510e4f7f9f85876ef5b7",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x080066CD",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST580_STM32_HYUNDAI_VERNA_MT_2021_V2.0.1.221002.bin",
+      "bytes": 47128,
+      "sha256": "793f2e1dfcd374f07fae38bf27ed41e58ab4eca8f7774570b3fc54acd4a76e46",
+      "initial_sp": "0x20005690",
+      "reset_vector": "0x0800652D",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST580_STM32_JAC_IEV7_AT_2022_V2.0.1.230101.bin",
+      "bytes": 47124,
+      "sha256": "d28a4b098fb800dd59ff02fb0162442c7c7822f35642871f8189259d089f1d3b",
+      "initial_sp": "0x20005690",
+      "reset_vector": "0x08006529",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST580_STM32_JAC_IEV7_AT_2022_V2.0.1.240201.bin",
+      "bytes": 48196,
+      "sha256": "9356104f9b1585480c8e4a2b880e57c687a3c1b2acbebc3d6179cef40b34e68e",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006941",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST580_STM32_VW_SANGTANA_MT_2024_V2.0.1.240401.bin",
+      "bytes": 49232,
+      "sha256": "93ed5778089a520be9122105e05760c24261373fff11e8b09aadef5ed37ecf4f",
+      "initial_sp": "0x20005698",
+      "reset_vector": "0x08006D21",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "EST580X_铁盒子通用OBD.bin",
+      "bytes": 35212,
+      "sha256": "d73c7719b9c582566b201d06e84632fc339ef2a11b6d1c631121724920f7ce16",
+      "initial_sp": "0x20001448",
+      "reset_vector": "0x08005CFD",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    },
+    {
+      "name": "大众纯监听版本_EST558S_VW_JETTA_MT_2014_V1.0.1.210225.bin",
+      "bytes": 36844,
+      "sha256": "ad35596dab32bb520fe3cf3a85faa284d044061285e46e50ccae4df655e7d0c2",
+      "initial_sp": "0x200014D8",
+      "reset_vector": "0x080062F9",
+      "rt_formats": [
+        39
+      ],
+      "has_rt": true,
+      "has_io": true,
+      "status": "catalogued_only"
+    }
+  ]
+}

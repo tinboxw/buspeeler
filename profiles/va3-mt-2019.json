@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "firmware_sha256": "97cf73b6db26e9026900aeb91050d99c12952e909fe87a74c0c7f70c5b6af1d8",
+  "status": "partial_static_candidates",
+  "candidates": [
+    {
+      "channel": "can0",
+      "extended": false,
+      "fd": false,
+      "message_length": 8,
+      "factor": 0.25,
+      "offset": 0,
+      "origins": [
+        "firmware:97cf73b6db26e9026900aeb91050d99c12952e909fe87a74c0c7f70c5b6af1d8"
+      ],
+      "source_sessions": [],
+      "unresolved": [
+        "2019 固件对 2023 VA3 手动挡的适用性未验证",
+        "长度/过滤/失效码/超时/主动诊断依赖未完全追踪"
+      ],
+      "freshness": 0.5,
+      "lag": 0,
+      "name": "EST_RPM",
+      "can_id": 640,
+      "layout": {
+        "start": 16,
+        "length": 16,
+        "endian": "little_endian",
+        "signed": false
+      },
+      "unit": "rpm",
+      "semantic": "rpm",
+      "postprocess": "floor",
+      "evidence": "0x080035CC–0x080035D8 → 结构 +8 → RT3; u >> 2"
+    },
+    {
+      "channel": "can0",
+      "extended": false,
+      "fd": false,
+      "message_length": 8,
+      "factor": 1,
+      "offset": 0,
+      "origins": [
+        "firmware:97cf73b6db26e9026900aeb91050d99c12952e909fe87a74c0c7f70c5b6af1d8"
+      ],
+      "source_sessions": [],
+      "unresolved": [
+        "2019 固件对 2023 VA3 手动挡的适用性未验证",
+        "长度/过滤/失效码/超时/主动诊断依赖未完全追踪"
+      ],
+      "freshness": 0.5,
+      "lag": 0,
+      "name": "EST_Speed",
+      "can_id": 800,
+      "layout": {
+        "start": 40,
+        "length": 16,
+        "endian": "little_endian",
+        "signed": false
+      },
+      "unit": "km/h",
+      "semantic": "speed",
+      "postprocess": "va3_speed",
+      "evidence": "0x080035E2–0x080035F4 → 结构 +0xC → RT4; (u >> 1) // 100"
+    },
+    {
+      "channel": "can0",
+      "extended": false,
+      "fd": false,
+      "message_length": 8,
+      "factor": 1,
+      "offset": 0,
+      "origins": [
+        "firmware:97cf73b6db26e9026900aeb91050d99c12952e909fe87a74c0c7f70c5b6af1d8"
+      ],
+      "source_sessions": [],
+      "unresolved": [
+        "2019 固件对 2023 VA3 手动挡的适用性未验证",
+        "长度/过滤/失效码/超时/主动诊断依赖未完全追踪"
+      ],
+      "freshness": 0.5,
+      "lag": 0,
+      "name": "EST_SteeringPercent",
+      "can_id": 194,
+      "layout": {
+        "start": 0,
+        "length": 16,
+        "endian": "little_endian",
+        "signed": false
+      },
+      "unit": "%",
+      "semantic": "steering",
+      "postprocess": "va3_steering",
+      "evidence": "0x0800354A–0x080035A2 → 结构 +0x15 → RT7; ((u & 0x3FFF)*100)//0x2E00; u > 0x8000 为 R 否则 L；百分比单位由用户确认，方向待实测"
+    },
+    {
+      "channel": "can0",
+      "extended": false,
+      "fd": false,
+      "message_length": 8,
+      "factor": 1,
+      "offset": 0,
+      "origins": [
+        "firmware:97cf73b6db26e9026900aeb91050d99c12952e909fe87a74c0c7f70c5b6af1d8"
+      ],
+      "source_sessions": [],
+      "unresolved": [
+        "2019 固件对 2023 VA3 手动挡的适用性未验证",
+        "长度/过滤/失效码/超时/主动诊断依赖未完全追踪"
+      ],
+      "freshness": 0.5,
+      "lag": 0,
+      "name": "EST_DriverDoor",
+      "can_id": 912,
+      "layout": {
+        "start": 16,
+        "length": 1,
+        "endian": "little_endian",
+        "signed": false
+      },
+      "unit": "",
+      "semantic": "driver_door",
+      "postprocess": "none",
+      "evidence": "0x08003626–0x08003636 → 结构 +0x49 → RT15; byte[2] & 1"
+    },
+    {
+      "channel": "can0",
+      "extended": false,
+      "fd": false,
+      "message_length": 8,
+      "factor": 1,
+      "offset": 0,
+      "origins": [
+        "firmware:97cf73b6db26e9026900aeb91050d99c12952e909fe87a74c0c7f70c5b6af1d8"
+      ],
+      "source_sessions": [],
+      "unresolved": [
+        "2019 固件对 2023 VA3 手动挡的适用性未验证",
+        "长度/过滤/失效码/超时/主动诊断依赖未完全追踪"
+      ],
+      "freshness": 0.5,
+      "lag": 0,
+      "name": "EST_Handbrake",
+      "can_id": 800,
+      "layout": {
+        "start": 9,
+        "length": 1,
+        "endian": "little_endian",
+        "signed": false
+      },
+      "unit": "",
+      "semantic": "handbrake",
+      "postprocess": "none",
+      "evidence": "0x08003608–0x08003620 → 结构 +0x59 → RT31; byte[1] & 2; formatter 0x08003E78/3E8E stack+120"
+    },
+    {
+      "channel": "can0",
+      "extended": false,
+      "fd": false,
+      "message_length": 8,
+      "factor": 1,
+      "offset": 0,
+      "origins": [
+        "firmware:97cf73b6db26e9026900aeb91050d99c12952e909fe87a74c0c7f70c5b6af1d8"
+      ],
+      "source_sessions": [],
+      "unresolved": [
+        "2019 固件对 2023 VA3 手动挡的适用性未验证",
+        "长度/过滤/失效码/超时/主动诊断依赖未完全追踪"
+      ],
+      "freshness": 0.5,
+      "lag": 0,
+      "name": "EST_Brake",
+      "can_id": 1832,
+      "layout": {
+        "start": 31,
+        "length": 1,
+        "endian": "little_endian",
+        "signed": false
+      },
+      "unit": "",
+      "semantic": "brake",
+      "postprocess": "none",
+      "evidence": "ID = 0x48A+0x29E=0x728; 0x08003980–0x08003992 → 结构 +0x5A → RT32; byte[3] & 0x80; formatter 0x08003E6A/3E6E stack+124"
+    },
+    {
+      "channel": "can0",
+      "extended": false,
+      "fd": false,
+      "message_length": 8,
+      "factor": 1,
+      "offset": 0,
+      "origins": [
+        "firmware:97cf73b6db26e9026900aeb91050d99c12952e909fe87a74c0c7f70c5b6af1d8"
+      ],
+      "source_sessions": [],
+      "unresolved": [
+        "2019 固件对 2023 VA3 手动挡的适用性未验证",
+        "长度/过滤/失效码/超时/主动诊断依赖未完全追踪"
+      ],
+      "freshness": 0.5,
+      "lag": 0,
+      "name": "EST_LeftIndicator",
+      "can_id": 914,
+      "layout": {
+        "start": 11,
+        "length": 1,
+        "endian": "little_endian",
+        "signed": false
+      },
+      "unit": "",
+      "semantic": "left_indicator",
+      "postprocess": "va3_indicator_hold",
+      "evidence": "0x08003734–0x08003768 → +0x5B → RT33; byte[1] bit3=1 置1且清计数；连续5次0清状态并清计数。初始值/外部写入/超时依赖仍待确认"
+    },
+    {
+      "channel": "can0",
+      "extended": false,
+      "fd": false,
+      "message_length": 8,
+      "factor": 1,
+      "offset": 0,
+      "origins": [
+        "firmware:97cf73b6db26e9026900aeb91050d99c12952e909fe87a74c0c7f70c5b6af1d8"
+      ],
+      "source_sessions": [],
+      "unresolved": [
+        "2019 固件对 2023 VA3 手动挡的适用性未验证",
+        "长度/过滤/失效码/超时/主动诊断依赖未完全追踪"
+      ],
+      "freshness": 0.5,
+      "lag": 0,
+      "name": "EST_RightIndicator",
+      "can_id": 914,
+      "layout": {
+        "start": 12,
+        "length": 1,
+        "endian": "little_endian",
+        "signed": false
+      },
+      "unit": "",
+      "semantic": "right_indicator",
+      "postprocess": "va3_indicator_hold",
+      "evidence": "0x0800376A–0x080037A0 → +0x5C → RT34; byte[1] bit4=1 置1且清计数；连续5次0清状态并清计数。初始值/外部写入/超时依赖仍待确认"
+    }
+  ]
+}
