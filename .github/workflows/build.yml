@@ -1,26 +1,78 @@
-name: verify-and-package
+name: Build Windows and Linux packages
 on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: packages-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
+    name: ${{ matrix.platform }} x64
+    timeout-minutes: 45
     strategy:
+      fail-fast: false
       matrix:
-        os: [windows-2022, ubuntu-22.04]
+        include:
+          - os: windows-2022
+            platform: windows
+            python: python312/Scripts/python.exe
+          - os: ubuntu-22.04
+            platform: linux
+            python: venv-linux/bin/python
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: pwsh
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: npm
-          cache-dependency-path: frontend/package-lock.json
-      - run: python scripts/build.py --cache "${{ runner.temp }}/buspeeler"
-      - uses: actions/upload-artifact@v4
+      - name: Check native x64 toolchain
+        run: |
+          cmake --version
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          g++ --version
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $target = g++ -dumpmachine
+          if ($LASTEXITCODE -ne 0 -or $target -notmatch '^x86_64-') { throw "Expected native x64 g++, got $target" }
+          if ($IsWindows) {
+            mingw32-make --version
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          }
+      - name: Cache dependency downloads
+        uses: actions/cache@v4
         with:
-          name: Buspeeler-${{ matrix.os }}-x64
           path: |
-            dist/**/*.zip
-            dist/**/*.tar.gz
-            dist/**/*.sha256
+            ${{ runner.temp }}/buspeeler/pip
+            ${{ runner.temp }}/buspeeler/release-${{ matrix.platform }}/npm
+          key: downloads-${{ runner.os }}-py312-node22-${{ hashFiles('requirements.lock', 'frontend/package-lock.json') }}
+          restore-keys: downloads-${{ runner.os }}-py312-node22-
+      - name: Test and build native package
+        run: python scripts/build.py --cache "$env:RUNNER_TEMP/buspeeler" --dist "dist/${{ matrix.platform }}"
+      - name: Verify archive and packaged application
+        run: '& "$env:RUNNER_TEMP/buspeeler/${{ matrix.python }}" tests/packaged_smoke.py --dist "dist/${{ matrix.platform }}" --work "$env:RUNNER_TEMP/buspeeler-smoke"'
+      - name: Upload downloadable package
+        id: package
+        uses: actions/upload-artifact@v4
+        with:
+          name: Buspeeler-${{ matrix.platform }}-x64
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 0
+          path: |
+            dist/${{ matrix.platform }}/*.zip
+            dist/${{ matrix.platform }}/*.tar.gz
+            dist/${{ matrix.platform }}/*.sha256
+      - name: Add download link to run summary
+        env:
+          PACKAGE_URL: ${{ steps.package.outputs.artifact-url }}
+        run: '"[Download ${{ matrix.platform }} x64 package]($env:PACKAGE_URL) — includes SHA-256 checksums; retained for 14 days." | Add-Content -LiteralPath $env:GITHUB_STEP_SUMMARY'

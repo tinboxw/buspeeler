@@ -24,6 +24,14 @@
 
 Linux 使用 `bash ./build.sh`。脚本自动安装锁定依赖、运行测试、构建页面与采集器、打包应用并生成压缩包及 SHA-256 文件，结果位于 `dist/windows` 或 `dist/linux`。首次构建需要网络，发行包运行可离线。使用 `--check` 仅检查工具，`--cache <目录>` 指定可复用缓存，`--dist <目录>` 指定产物目录；详细要求见[开发与打包](docs/development.md#开发与打包)。
 
+## GitHub 自动构建与下载
+
+推送代码、创建/更新 PR 时，`Build Windows and Linux packages` 流水线分别在 Windows Server 2022 和 Ubuntu 22.04 上构建 x64 包。也可在仓库 **Actions → Build Windows and Linux packages → Run workflow** 手动触发（工作流须先存在于默认分支）。
+
+构建成功后，从运行摘要的下载链接或 **Artifacts** 获取 `Buspeeler-windows-x64`、`Buspeeler-linux-x64`。每份包含平台压缩包和 `.sha256` 校验文件，保留 14 天。GitHub 下载的外层 ZIP 解开后，Windows 再解压应用 ZIP；Linux 再解压应用 tar.gz，以保留可执行权限。
+
+流水线复用本地一键构建入口，运行自动测试，并检查压缩包、无开发环境路径下的启动、页面资源和 DBC 发布门槛；检查失败的该平台不会上传产物。详细流程与边界见[GitHub Actions](docs/development.md#github-actions)。
+
 ## 文档
 
 - [运行、开发与验收](docs/development.md)：启动、输入格式、设备配置、开发构建及尚未完成的实机验收。

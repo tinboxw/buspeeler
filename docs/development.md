@@ -111,6 +111,18 @@ Linux 使用独立虚拟环境安装相同锁文件，在目标 Linux 上运行�
 
 固件索引可用 `python scripts/firmware_catalog.py` 重新生成。脚本只读仓库原始固件，生成 94 个文件的元数据和八条已审阅的 VA3 目标信号局部静态候选；不声称恢复所有 RT 字段。
 
+## GitHub Actions
+
+配置文件为 `.github/workflows/build.yml`，工作流名称为 `Build Windows and Linux packages`。推送分支/标签、PR 和手动运行均可触发；手动运行要求该工作流先合入默认分支。两端独立执行，其中一端失败不会取消另一端。
+
+- Windows Server 2022 / Ubuntu 22.04 x64，Python 3.12、Node.js 22，显式检查本机 x64 GCC 与构建工具，避免模拟采集测试因缺少编译器而跳过。
+- 缓存仅包含按锁文件和系统区分的 pip/npm 下载，不缓存虚拟环境、采集数据或旧发行目录。
+- 使用 `scripts/build.py` 完成依赖检查、16 项测试、页面/C++/应用构建与归档。
+- 使用 `tests/packaged_smoke.py` 核验归档和 SHA-256，在临时数据目录中以精简 PATH 启动发行程序，检查页面及已有独立验证/DBC 发布/修订门槛。测试只用合成数据，结束后关闭程序。
+- 通过后上传 `Buspeeler-windows-x64` 和 `Buspeeler-linux-x64`，附带版本化压缩包与 SHA-256；保留 14 天，运行摘要提供下载入口。Linux 应用放在 tar.gz 内，避免外层 Artifact ZIP 丢失执行权限。
+
+版本号读取 `pyproject.toml`，文件名例如 `Buspeeler-0.1.0-Windows-x64.zip` 和 `Buspeeler-0.1.0-Linux-x64.tar.gz`。标签触发同样上传 Actions 产物，不自动创建 GitHub Release。工作流只申请源码读取权限，无需配置额外 Secret；尚未在 GitHub 运行成功前，不能将本地检查称为云端构建通过。
+
 ## 接口与实现结构
 
 - `buspeeler/models.py`：版本 1 内部帧、信号、参考与验证计划模型。
