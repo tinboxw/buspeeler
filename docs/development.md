@@ -117,11 +117,21 @@ Linux 使用独立虚拟环境安装相同锁文件，在目标 Linux 上运行�
 
 - Windows Server 2022 / Ubuntu 22.04 x64，Python 3.12、Node.js 22，显式检查本机 x64 GCC 与构建工具，避免模拟采集测试因缺少编译器而跳过。
 - 缓存仅包含按锁文件和系统区分的 pip/npm 下载，不缓存虚拟环境、采集数据或旧发行目录。
-- 使用 `scripts/build.py` 完成依赖检查、16 项测试、页面/C++/应用构建与归档。
+- 使用 `scripts/build.py` 完成依赖检查、自动测试、页面/C++/应用构建与归档。
 - 使用 `tests/packaged_smoke.py` 核验归档和 SHA-256，在临时数据目录中以精简 PATH 启动发行程序，检查页面及已有独立验证/DBC 发布/修订门槛。测试只用合成数据，结束后关闭程序。
 - 通过后上传 `Buspeeler-windows-x64` 和 `Buspeeler-linux-x64`，附带版本化压缩包与 SHA-256；保留 14 天，运行摘要提供下载入口。Linux 应用放在 tar.gz 内，避免外层 Artifact ZIP 丢失执行权限。
 
-版本号读取 `pyproject.toml`，文件名例如 `Buspeeler-0.1.0-Windows-x64.zip` 和 `Buspeeler-0.1.0-Linux-x64.tar.gz`。标签触发同样上传 Actions 产物，不自动创建 GitHub Release。工作流只申请源码读取权限，无需配置额外 Secret；尚未在 GitHub 运行成功前，不能将本地检查称为云端构建通过。
+版本号读取 `pyproject.toml`，文件名例如 `Buspeeler-0.1.0-Windows-x64.zip` 和 `Buspeeler-0.1.0-Linux-x64.tar.gz`。构建任务只申请源码读取权限；自动发布任务单独申请 `contents: write`，使用仓库自带 `GITHUB_TOKEN`，无需配置额外 Secret。尚未在 GitHub 运行成功前，不能将本地检查称为云端构建通过。
+
+### Tag 自动发布
+
+1. 修改并提交 `pyproject.toml` 中的正式版本号，例如 `0.1.0`，确保该提交包含当前发布工作流。
+2. 在该提交创建并推送同名版本 tag：`git tag v0.1.0`，然后 `git push origin v0.1.0`。示例命令需由维护者在准备发布时执行，文档更新不会自动创建 tag。
+3. 流水线在构建前校验 `vX.Y.Z` 与项目版本完全一致；不一致直接失败。当前不自动发布预发布版本。
+4. 两个平台全部构建、测试和发行包验收成功后，发布任务下载本次运行的两份产物，再核对四个预期附件及 SHA-256，并确认远端 tag 仍指向本次构建提交。
+5. 使用 GitHub CLI 创建 Release 草稿并上传全部附件，成功后转为正式 Release，自动生成版本说明。Release 附件不受 Actions 产物 14 天保留期限制。普通分支、PR、其他 tag 和手动构建不会自动发布。
+
+同一 tag 的任务不会因新运行而中途取消；任务重跑也不覆盖已有同名 Release。若创建/上传失败留下草稿，检查错误后由维护者删除未发布草稿，再重跑失败任务；已发布版本需要修复时应使用新版本号及新 tag，不修改历史附件。实现见 `scripts/release.py`；草稿及发布参数参见 [GitHub CLI 文档](https://cli.github.com/manual/gh_release_create)。
 
 ## 接口与实现结构
 

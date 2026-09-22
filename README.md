@@ -32,6 +32,8 @@ Linux 使用 `bash ./build.sh`。脚本自动安装锁定依赖、运行测试�
 
 流水线复用本地一键构建入口，运行自动测试，并检查压缩包、无开发环境路径下的启动、页面资源和 DBC 发布门槛；检查失败的该平台不会上传产物。详细流程与边界见[GitHub Actions](docs/development.md#github-actions)。
 
+**自动发布版本：** 推送 `vX.Y.Z` tag（例如 `v0.1.0`），且 `pyproject.toml` 中版本为对应的 `X.Y.Z` 时，双平台构建和验收全部成功后会自动创建 GitHub Release，附 Windows ZIP、Linux tar.gz 和两个 SHA-256 文件。普通分支、PR 和手动构建只生成 Artifacts。当前仅支持正式版本 tag；已有同名 Release 不会覆盖。发布步骤及失败恢复见[GitHub Actions](docs/development.md#github-actions)。
+
 ## 文档
 
 - [运行、开发与验收](docs/development.md)：启动、输入格式、设备配置、开发构建及尚未完成的实机验收。
