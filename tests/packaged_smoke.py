@@ -71,6 +71,7 @@ def main():
                         time.sleep(.2)
                 else:
                     raise TimeoutError(f"Packaged application did not become ready: {last_error}")
+                assert "Buspeeler 本机服务：" in (work / "application.log").read_text(encoding="utf-8"), "Startup log must be flushed UTF-8"
                 with local_http.open(f"http://127.0.0.1:{port}/", timeout=5) as response:
                     assert b'id="app"' in response.read(), "Bundled page missing"
                 subprocess.run([sys.executable, str(Path(__file__).with_name("frozen_gate_smoke.py")),

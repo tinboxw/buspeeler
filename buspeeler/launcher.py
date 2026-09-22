@@ -17,6 +17,11 @@ from .app import create_app
 
 
 def main():
+    # Redirected Windows streams may use cp1252; application logs are UTF-8.
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if reconfigure is not None:
+            reconfigure(encoding="utf-8", errors="backslashreplace", line_buffering=True)
     multiprocessing.freeze_support()
     parser=argparse.ArgumentParser(description="Buspeeler 本机工作台")
     parser.add_argument("--data-dir",type=Path,default=Path(os.getenv("LOCALAPPDATA",Path.home()/".local/share"))/"Buspeeler")
